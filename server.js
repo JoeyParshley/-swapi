@@ -7,8 +7,8 @@ app.use(express.json());
 app.use(express.static("express"));
 
 // default URL for the website
-app.use('/', function(req, res){
-  res.send(path.join(__dirname+'/epxress/index.html'));
+app.use('/', (req, res) => {
+  res.send(path.join(__dirname+'/express/index.html'));
   //__dirname : will resolve to the project folder
 });
 
